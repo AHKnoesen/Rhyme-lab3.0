@@ -1,0 +1,16 @@
+
+/* Rhyme Lab Pro — theme-friendly highlights */
+.rhyme-lab-panel { padding: 8px; }
+.rhyme-badge { font-weight: 600; padding: 0 6px; border-radius: 6px; }
+
+/* Eight groups, progressively stronger accent mixes */
+:root { --rhyme-accent: var(--interactive-accent); }
+
+.rhyme-group-0 { background: color-mix(in srgb, var(--rhyme-accent) 18%, transparent); border-bottom: 2px solid var(--rhyme-accent); }
+.rhyme-group-1 { background: color-mix(in srgb, var(--rhyme-accent) 24%, transparent); border-bottom: 2px solid var(--rhyme-accent); }
+.rhyme-group-2 { background: color-mix(in srgb, var(--rhyme-accent) 30%, transparent); border-bottom: 2px solid var(--rhyme-accent); }
+.rhyme-group-3 { background: color-mix(in srgb, var(--rhyme-accent) 36%, transparent); border-bottom: 2px solid var(--rhyme-accent); }
+.rhyme-group-4 { background: color-mix(in srgb, var(--rhyme-accent) 42%, transparent); border-bottom: 2px solid var(--rhyme-accent); }
+.rhyme-group-5 { background: color-mix(in srgb, var(--rhyme-accent) 48%, transparent); border-bottom: 2px solid var(--rhyme-accent); }
+.rhyme-group-6 { background: color-mix(in srgb, var(--rhyme-accent) 54%, transparent); border-bottom: 2px solid var(--rhyme-accent); }
+.rhyme-group-7 { background: color-mix(in srgb, var(--rhyme-accent) 60%, transparent); border-bottom: 2px solid var(--rhyme-accent); }

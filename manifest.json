@@ -1,0 +1,11 @@
+{
+  "id": "rhyme-lab-pro",
+  "name": "Rhyme Lab Pro",
+  "version": "1.0.0",
+  "minAppVersion": "0.15.0",
+  "description": "Advanced phonetic rhyme analysis and visualization for lyrics and poetry",
+  "author": "Your Name",
+  "authorUrl": "",
+  "fundingUrl": "",
+  "isDesktopOnly": false
+}
