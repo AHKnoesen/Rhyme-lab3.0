@@ -70,3 +70,40 @@ The plugin uses multi-layer phonetic analysis:
 - `manifest.json`: Plugin metadata (id: "rhyme-lab-pro", minAppVersion: "0.15.0")
 - `styles.css`: Theme-friendly styling without invalid HSL math
 - Main implementations share core RhymeAnalyzer but differ in visualization approach
+
+## Advanced Hip-Hop Rhyme Analysis
+
+### Hip-Hop Enhancement Features
+- **Internal Rhymes**: Rakim-style mid-line rhyming patterns
+- **Compound Rhymes**: Eminem-style multi-word phrase rhyming
+- **Multisyllabic Chains**: Big Pun-style extended syllable matching
+- **Mosaic Rhymes**: Advanced Eminem technique - single words rhyming with phrases
+- **Flow Pattern Analysis**: Tempo, syllable density, and style classification
+- **Artist Profiling**: Complexity scoring and similarity detection
+
+### Phonetic Analysis Patterns
+
+#### ARPA Notation Implementation
+- **Vowel Classification System**: Groups similar vowels for assonance detection
+- **Consonant Pair Equivalence**: Defines substitutable consonants for slant rhymes
+- **Custom Phonetic Dictionary**: Modern slang, contractions, regional variations
+- **STOP_WORDS Filtering**: Excludes ubiquitous words to focus on meaningful rhymes
+
+#### Multi-Layer Processing Pipeline
+1. **Input Sanitization**: Length limits, type checking, ReDoS prevention
+2. **Grapheme-to-Phoneme Conversion**: Pattern-based G2P with fallbacks
+3. **Syllabification**: ARPA vowel detection for syllable boundaries
+4. **Stress Pattern Analysis**: Primary/secondary stress identification
+5. **Multi-Criteria Scoring**: Phonetic similarity + stress alignment + vowel classes
+
+### Security and Performance Considerations
+- **Input Validation**: `cleanWord()` method prevents ReDoS with length limits
+- **Graceful Fallback**: Hip-hop enhancements optional, core functionality preserved
+- **Error Boundaries**: Try/catch blocks prevent feature failures from crashing plugin
+- **Performance Limits**: Analysis scope limitation for large texts
+
+### Integration Architecture
+- **Multiple Build Strategy**: Core (main.js), Simple (main-simple.js), Hip-Hop (main-hiphop.js)
+- **Optional Enhancement Loading**: Hip-hop features loaded conditionally with graceful fallback
+- **Settings-Driven Features**: `enableHipHopFeatures` toggle for backward compatibility
+- **CM6 Decoration Support**: TypeScript extension for proper CodeMirror 6 integration
