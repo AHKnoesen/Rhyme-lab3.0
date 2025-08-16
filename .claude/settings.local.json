@@ -14,7 +14,9 @@
       "Bash(echo $PATH)",
       "Bash(ln:*)",
       "Bash(mkdir:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git push:*)",
+      "Bash(git commit:*)"
     ],
     "additionalDirectories": [
       "C:\\Users\\adamk\\Downloads\\rhyme-analyzer\\Resources"
