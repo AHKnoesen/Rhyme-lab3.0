@@ -1,0 +1,418 @@
+/* Hip-Hop Rhyme Lab Pro - Enhanced Styles */
+
+/* Artist Profile Section */
+.rhyme-artist-profile {
+    background: var(--background-secondary);
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+    border-left: 4px solid var(--color-accent);
+}
+
+.rhyme-artist-profile h3 {
+    color: var(--color-accent);
+    margin: 0 0 12px 0;
+    font-size: 1.2em;
+}
+
+.profile-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 12px;
+}
+
+.complexity-score {
+    background: linear-gradient(90deg, #ff6b6b, #feca57, #48dbfb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.flow-style {
+    color: var(--text-accent);
+    font-weight: 600;
+    padding: 4px 8px;
+    background: var(--background-modifier-border);
+    border-radius: 4px;
+}
+
+.similar-artists {
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+.profile-metrics {
+    border-top: 1px solid var(--background-modifier-border);
+    padding-top: 8px;
+    font-size: 0.9em;
+    color: var(--text-muted);
+}
+
+/* Traditional Rhyme Groups */
+.rhyme-groups-section {
+    margin: 20px 0;
+}
+
+.rhyme-group {
+    margin: 12px 0;
+    padding: 12px;
+    background: var(--background-secondary);
+    border-radius: 6px;
+    border-left: 4px solid var(--color-accent);
+}
+
+.group-header {
+    margin-bottom: 8px;
+}
+
+.group-title {
+    font-weight: 600;
+    color: var(--text-accent);
+}
+
+.words-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.rhyme-word {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: 500;
+    border: 1px solid currentColor;
+    transition: all 0.2s ease;
+}
+
+.rhyme-word:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Internal Rhymes Section */
+.internal-rhymes-section {
+    background: var(--background-secondary);
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+    border-left: 4px solid #ff6b6b;
+}
+
+.internal-rhymes-section h3 {
+    color: #ff6b6b;
+    margin: 0 0 12px 0;
+}
+
+.internal-word-1, .internal-word-2 {
+    background: #ff6b6b20;
+    color: #ff6b6b;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-weight: 500;
+}
+
+/* Compound Rhymes Section */
+.compound-rhymes-section {
+    background: var(--background-secondary);
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+    border-left: 4px solid #feca57;
+}
+
+.compound-rhymes-section h3 {
+    color: #feca57;
+    margin: 0 0 12px 0;
+}
+
+.compound-phrase {
+    background: #feca5720;
+    color: #feca57;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-weight: 500;
+}
+
+.compound-target {
+    background: #ff9ff320;
+    color: #ff9ff3;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-weight: 500;
+}
+
+/* Multisyllabic Chains Section */
+.multisyllabic-section {
+    background: var(--background-secondary);
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+    border-left: 4px solid #48dbfb;
+}
+
+.multisyllabic-section h3 {
+    color: #48dbfb;
+    margin: 0 0 12px 0;
+}
+
+.multi-phrase-1, .multi-phrase-2 {
+    background: #48dbfb20;
+    color: #48dbfb;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-weight: 500;
+}
+
+.syllable-count {
+    color: var(--text-muted);
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+/* Flow Patterns Section */
+.flow-patterns-section {
+    background: var(--background-secondary);
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+    border-left: 4px solid #54a0ff;
+}
+
+.flow-patterns-section h3 {
+    color: #54a0ff;
+    margin: 0 0 12px 0;
+}
+
+.flow-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.flow-stats > div {
+    padding: 8px;
+    background: var(--background-primary);
+    border-radius: 4px;
+    border: 1px solid var(--background-modifier-border);
+}
+
+/* Tempo styles */
+.tempo-rapid {
+    color: #ff6b6b;
+    font-weight: bold;
+}
+
+.tempo-medium {
+    color: #feca57;
+    font-weight: bold;
+}
+
+.tempo-laid-back {
+    color: #48dbfb;
+    font-weight: bold;
+}
+
+/* Flow style indicators */
+.style-chopper {
+    color: #ff6b6b;
+    background: #ff6b6b10;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+.style-bounce {
+    color: #feca57;
+    background: #feca5710;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+.style-laid-back {
+    color: #48dbfb;
+    background: #48dbfb10;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+.style-aggressive {
+    color: #ff4757;
+    background: #ff475710;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+.style-conversational {
+    color: #7bed9f;
+    background: #7bed9f10;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+.style-syncopated {
+    color: #ff9ff3;
+    background: #ff9ff310;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+.style-standard {
+    color: var(--text-muted);
+    background: var(--background-modifier-border);
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+/* Statistics Grid */
+.rhyme-stats {
+    background: var(--background-secondary);
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 12px;
+    background: var(--background-primary);
+    border-radius: 6px;
+    border: 1px solid var(--background-modifier-border);
+    transition: all 0.2s ease;
+}
+
+.stat-item:hover {
+    border-color: var(--color-accent);
+    transform: translateY(-1px);
+}
+
+.stat-label {
+    font-size: 0.9em;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+}
+
+.stat-value {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--text-accent);
+}
+
+/* List styles for hip-hop features */
+.internal-rhymes-section ul,
+.compound-rhymes-section ul,
+.multisyllabic-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.internal-rhymes-section li,
+.compound-rhymes-section li,
+.multisyllabic-section li {
+    padding: 8px;
+    margin: 4px 0;
+    background: var(--background-primary);
+    border-radius: 4px;
+    border-left: 3px solid currentColor;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .profile-stats {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .words-list {
+        gap: 4px;
+    }
+    
+    .rhyme-word {
+        font-size: 0.9em;
+        padding: 3px 6px;
+    }
+}
+
+/* Dark theme adjustments */
+.theme-dark .rhyme-artist-profile,
+.theme-dark .rhyme-group,
+.theme-dark .internal-rhymes-section,
+.theme-dark .compound-rhymes-section,
+.theme-dark .multisyllabic-section,
+.theme-dark .flow-patterns-section,
+.theme-dark .rhyme-stats {
+    background: var(--background-secondary);
+    border-color: var(--background-modifier-border);
+}
+
+/* Animation for loading states */
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.6; }
+    100% { opacity: 1; }
+}
+
+.loading {
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* Highlight animations for newly found patterns */
+@keyframes highlight {
+    0% { background-color: var(--color-accent); }
+    100% { background-color: transparent; }
+}
+
+.new-pattern {
+    animation: highlight 1s ease-out;
+}
+
+/* Scrollbar styling for long lists */
+.internal-rhymes-section ul,
+.compound-rhymes-section ul,
+.multisyllabic-section ul {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+/* Custom scrollbar */
+.internal-rhymes-section ul::-webkit-scrollbar,
+.compound-rhymes-section ul::-webkit-scrollbar,
+.multisyllabic-section ul::-webkit-scrollbar {
+    width: 6px;
+}
+
+.internal-rhymes-section ul::-webkit-scrollbar-track,
+.compound-rhymes-section ul::-webkit-scrollbar-track,
+.multisyllabic-section ul::-webkit-scrollbar-track {
+    background: var(--background-modifier-border);
+    border-radius: 3px;
+}
+
+.internal-rhymes-section ul::-webkit-scrollbar-thumb,
+.compound-rhymes-section ul::-webkit-scrollbar-thumb,
+.multisyllabic-section ul::-webkit-scrollbar-thumb {
+    background: var(--text-muted);
+    border-radius: 3px;
+}
+
+.internal-rhymes-section ul::-webkit-scrollbar-thumb:hover,
+.compound-rhymes-section ul::-webkit-scrollbar-thumb:hover,
+.multisyllabic-section ul::-webkit-scrollbar-thumb:hover {
+    background: var(--text-normal);
+}

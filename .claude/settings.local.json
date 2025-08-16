@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(where gh)",
+      "Bash(\"C:\\Program Files\\GitHub CLI\\gh.exe\" --version)",
+      "Bash(setx:*)",
+      "Bash(set PATH=%PATH%)",
+      "Bash(\"C:\\Program Files\\GitHub CLI\")",
+      "Bash($env:PATH += \";C:\\Program Files\\GitHub CLI\")",
+      "Bash(gh:*)",
+      "Bash(alias gh='\"\"C:\\Program Files\\GitHub CLI\\gh.exe\"\"')",
+      "Bash(\"C:\\Program Files\\GitHub CLI\\gh.exe\" auth status)",
+      "Bash(\"C:\\Program Files\\GitHub CLI\\gh.exe\" auth login)",
+      "Bash(echo $PATH)",
+      "Bash(ln:*)",
+      "Bash(mkdir:*)",
+      "Bash(git add:*)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\adamk\\Downloads\\rhyme-analyzer\\Resources"
+    ]
+  },
+  "outputStyle": "Explanatory"
+}

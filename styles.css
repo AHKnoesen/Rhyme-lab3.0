@@ -14,3 +14,249 @@
 .rhyme-group-5 { background: color-mix(in srgb, var(--rhyme-accent) 48%, transparent); border-bottom: 2px solid var(--rhyme-accent); }
 .rhyme-group-6 { background: color-mix(in srgb, var(--rhyme-accent) 54%, transparent); border-bottom: 2px solid var(--rhyme-accent); }
 .rhyme-group-7 { background: color-mix(in srgb, var(--rhyme-accent) 60%, transparent); border-bottom: 2px solid var(--rhyme-accent); }
+
+/* Hip-Hop Enhancement Styles - Theme Adaptive */
+
+/* Fallback colors for themes that don't define semantic colors */
+:root {
+    --rhyme-red: var(--color-red, #e74c3c);
+    --rhyme-orange: var(--color-orange, #f39c12);
+    --rhyme-blue: var(--color-blue, #3498db);
+    --rhyme-purple: var(--color-purple, #9b59b6);
+    --rhyme-pink: var(--color-pink, #e91e63);
+    --rhyme-yellow: var(--color-yellow, #f1c40f);
+    --rhyme-green: var(--color-green, #27ae60);
+    --rhyme-cyan: var(--color-cyan, #1abc9c);
+}
+
+/* Artist Profile Section */
+.rhyme-artist-profile {
+    background: var(--background-secondary);
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+    border-left: 4px solid var(--interactive-accent);
+}
+
+.profile-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 12px;
+}
+
+.complexity-score {
+    background: linear-gradient(90deg, var(--rhyme-red), var(--rhyme-orange), var(--rhyme-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bold;
+    font-size: 1.1em;
+    /* Fallback for browsers that don't support background-clip: text */
+    color: var(--rhyme-red);
+}
+
+.flow-style {
+    color: var(--text-accent);
+    font-weight: 600;
+    padding: 4px 8px;
+    background: var(--background-modifier-border);
+    border-radius: 4px;
+}
+
+.similar-artists {
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+.profile-metrics {
+    border-top: 1px solid var(--background-modifier-border);
+    padding-top: 8px;
+    font-size: 0.9em;
+    color: var(--text-muted);
+}
+
+/* Internal Rhymes - Using theme red */
+.internal-word-1, .internal-word-2 {
+    background: color-mix(in srgb, var(--rhyme-red) 20%, transparent);
+    color: var(--rhyme-red);
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-weight: 500;
+    /* Fallback for browsers that don't support color-mix */
+    background: rgba(231, 76, 60, 0.2);
+}
+
+/* Compound Rhymes - Using theme orange/yellow */
+.compound-phrase {
+    background: color-mix(in srgb, var(--rhyme-orange) 20%, transparent);
+    color: var(--rhyme-orange);
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-weight: 500;
+    /* Fallback for browsers that don't support color-mix */
+    background: rgba(243, 156, 18, 0.2);
+}
+
+.compound-target {
+    background: color-mix(in srgb, var(--rhyme-yellow) 20%, transparent);
+    color: var(--rhyme-yellow);
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-weight: 500;
+    border-left: 2px solid var(--rhyme-yellow);
+    /* Fallback for browsers that don't support color-mix */
+    background: rgba(241, 196, 15, 0.2);
+}
+
+/* Multisyllabic Chains - Using theme blue */
+.multi-phrase-1, .multi-phrase-2 {
+    background: color-mix(in srgb, var(--rhyme-blue) 20%, transparent);
+    color: var(--rhyme-blue);
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-weight: 500;
+    /* Fallback for browsers that don't support color-mix */
+    background: rgba(52, 152, 219, 0.2);
+}
+
+.syllable-count {
+    color: var(--text-muted);
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+/* Mosaic Rhymes - Using theme pink/purple/cyan */
+.mosaic-single-word {
+    background: color-mix(in srgb, var(--rhyme-pink) 25%, transparent);
+    color: var(--rhyme-pink);
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-weight: 600;
+    /* Fallback for browsers that don't support color-mix */
+    background: rgba(233, 30, 99, 0.25);
+}
+
+.mosaic-phrase {
+    background: color-mix(in srgb, var(--rhyme-purple) 20%, transparent);
+    color: var(--rhyme-purple);
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-weight: 500;
+    border-left: 2px solid var(--rhyme-purple);
+    /* Fallback for browsers that don't support color-mix */
+    background: rgba(155, 89, 182, 0.2);
+}
+
+.mosaic-phrase-1, .mosaic-phrase-2 {
+    background: color-mix(in srgb, var(--rhyme-cyan) 20%, transparent);
+    color: var(--rhyme-cyan);
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-weight: 500;
+    border-left: 2px solid var(--rhyme-cyan);
+    /* Fallback for browsers that don't support color-mix */
+    background: rgba(26, 188, 156, 0.2);
+}
+
+.mosaic-similarity {
+    color: var(--text-accent);
+    font-size: 0.85em;
+    font-weight: 600;
+    margin-left: 8px;
+}
+
+.mosaic-line-info {
+    color: var(--text-muted);
+    font-size: 0.8em;
+    margin-left: 4px;
+}
+
+/* Flow Pattern Styles - Theme adaptive */
+.tempo-rapid {
+    color: var(--rhyme-red);
+    font-weight: bold;
+}
+
+.tempo-medium {
+    color: var(--rhyme-orange);
+    font-weight: bold;
+}
+
+.tempo-laid-back {
+    color: var(--rhyme-blue);
+    font-weight: bold;
+}
+
+/* Flow style indicators */
+.style-chopper {
+    color: var(--rhyme-red);
+    background: color-mix(in srgb, var(--rhyme-red) 10%, transparent);
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+.style-bounce {
+    color: var(--rhyme-orange);
+    background: color-mix(in srgb, var(--rhyme-orange) 10%, transparent);
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+.style-conversational {
+    color: var(--rhyme-green);
+    background: color-mix(in srgb, var(--rhyme-green) 10%, transparent);
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+.style-aggressive {
+    color: var(--rhyme-red);
+    background: color-mix(in srgb, var(--rhyme-red) 15%, transparent);
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+.style-syncopated {
+    color: var(--rhyme-purple);
+    background: color-mix(in srgb, var(--rhyme-purple) 10%, transparent);
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+.style-standard {
+    color: var(--text-muted);
+    background: var(--background-modifier-border);
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+/* Results view sections */
+.rhyme-section {
+    margin-bottom: 20px;
+}
+
+.rhyme-section-title {
+    color: var(--text-accent);
+    margin-bottom: 12px;
+    border-bottom: 1px solid var(--background-modifier-border);
+    padding-bottom: 4px;
+}
+
+/* Hip-hop feature lists */
+.rhyme-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.rhyme-section li {
+    padding: 8px;
+    margin: 4px 0;
+    background: var(--background-primary);
+    border-radius: 4px;
+    border-left: 3px solid var(--interactive-accent);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
